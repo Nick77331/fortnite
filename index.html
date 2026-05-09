@@ -1,0 +1,12 @@
+using { /://fortnite.com }
+using { /Verse.org/Simulation }
+
+# A simple device that triggers an event
+hello_world_device := class(creative_device):
+
+    # Runs when the game starts
+    OnBegin<override>()<suspends>:void=
+        Print("Game Started! Welcome to my Fortnite Island.")
+        
+    # You can add logic here to track player scores, 
+    # manage rounds, or change the environment.
